@@ -7,9 +7,9 @@ interface HomeLayoutProps {
 
 export default function HomeLayout({ children }: HomeLayoutProps) {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-brand-radial">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 bg-gradient-subtle">{children}</main>
       <Footer />
     </div>
   );

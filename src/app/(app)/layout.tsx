@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DM_Sans } from "next/font/google";
+import { Karla } from "next/font/google";
 
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-});
+const karla = Karla({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} antialiased`}>{children}</body>
+      <body className={`${karla.className} antialiased`}>{children}</body>
     </html>
   );
 }
