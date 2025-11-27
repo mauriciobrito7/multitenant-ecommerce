@@ -50,7 +50,7 @@ function NavItem({ children, href, isActive }: NavItem) {
       className={cn(
         buttonVariants({ variant: "link" }),
         "bg-transparent hover:bg-transparent rounded-full border-transparent hover:no-underline hover:border-primary px-3.5 text-lg",
-        isActive && "bg-black text-white hover:bg-black hover:text-white"
+        isActive && "bg-foreground text-background hover:bg-foreground hover:text-background"
       )}
     >
       {children}
@@ -83,7 +83,7 @@ export function Navbar() {
           href="/sign-in"
           className={cn(
             buttonVariants({ variant: "secondary" }),
-            "border-0 border-l px-12 h-full rounded-none bg-background hover:bg-brand transition-colors text-lg duration-150"
+            "border-0 border-l px-12 h-full rounded-none bg-background hover:bg-brand hover:text-background transition-colors text-lg duration-150"
           )}
         >
           Login
@@ -92,7 +92,7 @@ export function Navbar() {
           href="/sign-up"
           className={cn(
             buttonVariants({ variant: "secondary" }),
-            "border-0 border-l px-12 h-full rounded-none bg-black text-white hover:bg-brand hover:text-black transition-colors text-lg duration-150"
+            "border-0 border-l px-12 h-full rounded-none bg-foreground text-background hover:bg-brand hover:text-background transition-colors text-lg duration-150"
           )}
         >
           Start selling
