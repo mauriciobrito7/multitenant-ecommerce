@@ -29,7 +29,7 @@ export function NavbarSidebar({ items, open, onOpenChange }: NavbarSidebar) {
               onClick={() => onOpenChange(false)}
               key={item.href}
               href={item.href}
-              className="w-full text-left p-4 hover:bg-black hover:text-white flex items-center text-base font-medium duration-150"
+              className="w-full text-left p-4 hover:bg-foreground hover:text-background flex items-center text-base font-medium duration-150"
             >
               {item.children}
             </Link>
@@ -39,14 +39,14 @@ export function NavbarSidebar({ items, open, onOpenChange }: NavbarSidebar) {
             <Link
               onClick={() => onOpenChange(false)}
               href="/sign-in"
-              className="w-full text-left p-4 hover:bg-black hover:text-white flex items-center text-base font-medium duration-150"
+              className="w-full text-left p-4 hover:bg-foreground hover:text-background flex items-center text-base font-medium duration-150"
             >
               Login
             </Link>
             <Link
               onClick={() => onOpenChange(false)}
               href="/sign-up"
-              className="w-full text-left p-4 hover:bg-black hover:text-white flex items-center text-base font-medium duration-150"
+              className="w-full text-left p-4 hover:bg-foreground hover:text-background flex items-center text-base font-medium duration-150"
             >
               Start selling
             </Link>
